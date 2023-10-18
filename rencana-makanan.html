@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rencana Makanan - CareStunt</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/main/app.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/extensions/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/shared/iconly.css" />
+  </head>
+  <body style="color: black; font-family: Roboto; background-color: white;">
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      aria-label="Offcanvas navbar large"
+    >
+      <div class="container-fluid mx-lg-4 m-sm-0">
+        <div class="logo"><a href="index.html"><img src="assets/logo.png" style="width: 60px; height: 60px;" alt=""> Care<span>Stunt</span></a></div>
+        <!-- <img src="assets/logo.png" alt=""  />
+        <h1 style="padding: 10px; margin-top: 5px; color: black">CareStunt</h1> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-succebtn-sm btn-success"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 ps-5">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="konsultasi.html">konsultasi</a>
+              </li>
+              <li class="nav-item active dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pustaka Gizi
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="kalkulator.html"
+                      >Kalkulator Gizi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rencana-makanan.html"
+                      >Rencana Makanan</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="komunitas.html" class="nav-link"> Komunitas </a>
+              </li>
+              <li class="nav-item">
+                <a href="tentang-kami.html" class="nav-link">
+                  Tentang Kami
+                </a>
+              </li>
+              <div class="dropdown">
+                <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="user-menu d-flex">
+                    <div class="user-img d-flex align-items-center">
+                      <div class="avatar avatar-md">
+                        <img src="assets/images/faces/2.jpg" />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="dropdownMenuButton"
+                  style="min-width: 11rem"
+                >
+                  <li>
+                    <h6 class="dropdown-header">Hello, Zhaa!
+                      <br><span>zha@gmail.com</span>
+                    </h6>
+                    
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="aktivitas.html"
+                      ><i class="fa-fw select-all fas"></i> Aktivitas Saya</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="kalkulator.html"
+                      ><i class="fa-fw select-all fas"></i> Kalkulator Gizi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="editprofile.html"
+                      ><i class="fa-fw select-all fas"></i> Ubah Profile</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-fw select-all fas"></i>
+                      Keluar</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Tutup Navbar -->
+
+<!-- Isi Content -->
+
+    <div class="container mb-10">
+          <h1 class="text-center">Resep Makanan Balita</h1>
+
+    
+            <div class="row">
+                <!-- Bubur Ayam -->
+                <div class="col-md-3">
+                    <div class="card">
+                      <div class="recipe-card">
+                        <img src="assets/images/makanan/bubur ayam1.jpg" alt="Bubur Ayam" class="card-img-top">
+                        <div class="card-body">
+                            <h5 style="color: black" class="card-title">Bubur Ayam</h5>
+                            <h6 style="color: black" class="card-subtitle mb-2 text-muted">Bahan-bahan:</h6>
+                            <ul class="card-text">
+                                <li>Daging ayam</li>
+                                <li>Beras</li>
+                                <li>Air</li>
+                                <li>Wortel</li>
+                            </ul>
+                            <div class="read-more">
+                                <h6 class="card-subtitle mb-2 text-muted">Cara Membuat:</h6>
+                                <p class="card-text">Rebus daging ayam hingga matang, masak beras hingga empuk, campurkan semua bahan, dan hancurkan menjadi konsistensi yang sesuai.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Informasi Nutrisi:</h6>
+                                <p class="card-text">Kalori: 130, Protein: 8g, Karbohidrat: 20g, Serat: 2g, Zat besi: 2mg</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-end">
+                              <a href="view-makanan.html" class="btn">Baca Selengkapnya</a></div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Bubur Pisang -->
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="recipe-card">
+                        <img src="assets/images/makanan/bubur pisang.jpg" alt="Bubur Pisang" class="card-img-top">
+                        <div class="card-body">
+                            <h5 style="color: black" class="card-title">Bubur Pisang</h5>
+                            <h6 style="color: black" class="card-subtitle mb-2 text-muted">Bahan-bahan:</h6>
+                            <ul class="card-text">
+                                <li>Pisang matang</li>
+                                <li>Alpukat</li>
+                                <li>Sereal gandum</li>
+                                <li>Susu</li>
+                            </ul>
+                            <div class="read-more">
+                                <h6 class="card-subtitle mb-2 text-muted">Cara Membuat:</h6>
+                                <p class="card-text">Kupas pisang dan alpukat, haluskan keduanya, tambahkan sereal gandum jika diinginkan.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Informasi Nutrisi:</h6>
+                                <p class="card-text">Kalori: 150, Protein: 2g, Karbohidrat: 20g, Serat: 5g, Lemak sehat: 9g</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-end">
+                            <a href="view-makanan.html" class="btn read-more-btn">Baca Selengkapnya</a></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+    
+                <!-- Sayur Bening -->
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="recipe-card">
+                        <img src="assets/images/makanan/sayur bening.jpg" alt="Sayur Bening" class="card-img-top">
+                        <div class="card-body">
+                            <h5 style="color: black" class="card-title">Sayur Bening</h5>
+                            <h6 style="color: black;">Bahan-bahan:</h6>
+                            <ul class="card-text">
+                                <li>Bayam</li>
+                                <li>Wortel</li>
+                                <li>Kentang</li>
+                                <li>Air</li>
+                            </ul>
+                            <div class="read-more">
+                                <h6 class="card-subtitle mb-2 text-muted">Cara Membuat:</h6>
+                                <p class="card-text">Rebus bayam, wortel, dan kentang dalam air hingga empuk, lalu hancurkan menjadi puree yang lembut.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Informasi Nutrisi:</h6>
+                                <p class="card-text">Kalori: 60, Protein: 2g, Karbohidrat: 14g, Serat: 3g, Vitamin A: 2000 IU</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-end">
+                            <a href="view-makanan.html" class="btn read-more-btn">Baca Selengkapnya</a></div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- Tumis Brokoli -->
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="recipe-card">
+                        <img src="assets/images/makanan/tahu sayur.jpg" alt="Tumis Brokoli" class="card-img-top">
+                        <div class="card-body">
+                            <h5 style="color: black" class="card-title">Tumis Tahu Sayur</h5>
+                            <h6 style="color: black;">Bahan-bahan:</h6>
+                            <ul class="card-text">
+                                <li>Tahu</li>
+                                <li>Pakcoy</li>
+                                <li>Bawang merah</li>
+                                <li>Minyak sayur</li>
+                            </ul>
+                            <div class="read-more">
+                                <h6 class="card-subtitle mb-2 text-muted">Cara Membuat:</h6>
+                                <p class="card-text">Tumis bawang merah, bawang putih, dan cabe merah (jika digunakan), tambahkan kangkung, garam, dan minyak sayur. Tumis hingga matang.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Informasi Nutrisi:</h6>
+                                <p class="card-text">Kalori: 60, Protein: 3g, Karbohidrat: 10g, Lemak: 5g</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-end">
+                            <a href="view-makanan.html" class="btn read-more-btn">Baca Selengkapnya</a></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Nasi Tim Sayur -->
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="recipe-card">
+                        <img src="assets/images/makanan/nasi tim.jpg" alt="Nasi Tim Sayur" class="card-img-top">
+                        <div class="card-body">
+                            <h5 style="color: black" class="card-title">Nasi Tim Sayur</h5>
+                            <h6 style="color: black;">Bahan-bahan:</h6>
+                            <ul class="card-text">
+                                <li>Nasi</li>
+                                <li>Kacang polong</li>
+                                <li>Jagung manis</li>
+                                <li>Wortel</li>
+                            </ul>
+                            <div class="read-more">
+                                <h6 class="card-subtitle mb-2 text-muted">Cara Membuat:</h6>
+                                <p class="card-text">Rebus nasi dan sayuran hingga empuk, lalu hancurkan semuanya menjadi konsistensi bubur yang cocok untuk balita.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Informasi Nutrisi:</h6>
+                                <p class="card-text">Kalori: 110, Protein: 2g, Karbohidrat: 24g, Serat: 3g, Vitamin C: 5mg</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-end">
+                            <a href="view-makanan.html" class="btn read-more-btn">Baca Selengkapnya</a></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+    
+                <!-- Sup Labu Kuning -->
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="recipe-card">
+                        <img src="assets/images/makanan/sup labu.jpg" alt="Sup Labu Kuning" class="card-img-top">
+                        <div class="card-body">
+                            <h5 style="color: black" class="card-title">Sup Labu Kuning</h5>
+                            <h6 style="color: black;">Bahan-bahan:</h6>
+                            <ul class="card-text">
+                                <li>Labu kuning</li>
+                                <li>Kentang</li>
+                                <li>Ayam</li>
+                                <li>Air</li>
+                            </ul>
+                            <div class="read-more">
+                                <h6 class="card-subtitle mb-2 text-muted">Cara Membuat:</h6>
+                                <p class="card-text">Rebus labu kuning, kentang, dan ayam dalam air hingga empuk, lalu hancurkan semuanya menjadi puree.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Informasi Nutrisi:</h6>
+                                <p class="card-text">Kalori: 80, Protein: 6g, Karbohidrat: 15g, Serat: 2g, Vitamin A: 3000 IU</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-end">
+                            <a href="view-makanan.html" class="btn read-more-btn">Baca Selengkapnya</a></div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+    
+                <!-- Mie Telur Sayur-->
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="recipe-card">
+                        <img src="assets/images/makanan/mie sayur.jpeg" alt="Mie Telur Sayur" class="card-img-top">
+                        <div class="card-body">
+                            <h5 style="color: black" class="card-title">Mie Telur Sayur</h5>
+                            <h6 style="color: black;">Bahan-bahan:</h6>
+                            <ul class="card-text">
+                                <li>Mie telur</li>
+                                <li>Brokoli</li>
+                                <li>Wortel</li>
+                                <li>Ayam rebus</li>
+                            </ul>
+                            <div class="read-more">
+                                <h6 class="card-subtitle mb-2 text-muted">Cara Membuat:</h6>
+                                <p class="card-text">Rebus mie telur hingga empuk, tumis sayuran dan ayam hingga lunak, campur semua bahan, dan potong mie menjadi potongan kecil.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Informasi Nutrisi:</h6>
+                                <p class="card-text">Kalori: 120, Protein: 9g, Karbohidrat: 15g, Serat: 3g, Zat besi: 2mg</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-end">
+                            <a href="view-makanan.html" class="btn read-more-btn">Baca Selengkapnya</a></div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+    
+                <!-- Bubur Labu -->
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="recipe-card">
+                        <img src="assets/images/makanan/sup ayam.jpg" alt="Sup ayam" class="card-img-top">
+                        <div class="card-body">
+                            <h5 style="color: black" class="card-title">Sup Ayam</h5>
+                            <h6 style="color: black;">Bahan-bahan:</h6>
+                            <ul class="card-text">
+                                <li>Dada ayam</li>
+                                <li>Wortel</li>
+                                <li>Daun bawang</li>
+                                <li>Kentang</li>
+                            </ul>
+                            <div class="read-more">
+                                <h6 class="card-subtitle mb-2 text-muted">Cara Membuat:</h6>
+                                <p class="card-text">Rebus labu hingga empuk, kupas pisang dan pisahkan seratnya, haluskan labu dan pisang, tambahkan sereal gandum jika diinginkan.</p>
+                                <h6 class="card-subtitle mb-2 text-muted">Informasi Nutrisi:</h6>
+                                <p class="card-text">Kalori: 90, Protein: 1.5g, Karbohidrat: 20g, Serat: 4g, Vitamin A: 4000 IU</p>
+                            </div>
+                            <div class="card-button d-flex justify-content-end">
+                            <a href="view-makanan.html" class="btn read-more-btn">Baca Selengkapnya</a></div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- tutup content -->
+
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-2 col-sm-3">
+              <h6>KONTAK KAMI</h6>
+              <ul class="footer-links">
+                <li><a href="">Handphone : 081223344556</a></li>
+                <li><a href="">Telepon : (123) 456-7890</a></li>
+                <li><a href="">Email : info@CareStunt</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-2 col-sm-2">
+              <h6>TENTANG KAMI</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/category/c-language/">Tentang Kami</a></li>
+                <li><a href="http://scanfcode.com/category/front-end-development/">Artikel</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-2 col-sm-3">
+              <h6>LAYANAN</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/contact/">Konsultasi</a></li>
+                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Rencana Makanan</a></li>
+              </ul>
+            </div>
+            <div class="col-4 col-sm-3 ">
+              <h6 style="color: black;">Daftar di Situs Kami</h6>
+              <div class="d-flex ">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Email">
+              </div>
+            </div>
+            <div class="col-4 col-sm-1 mt-4 pt-2" style="margin-left: -20px;">
+              <div class="btn-footer">
+              <button type="submit" class="btn">Daftar</button> 
+          </div>
+        </div>
+          </div>
+      
+        </div>
+        <div class="container">
+       
+          <div class="d-flex justify-content-center">
+            
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="bi bi-whatsapp"></i></a></li>
+              <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a></li>   
+            </ul>
+          </div>
+          <div class="d-flex justify-content-center">
+            <p class="copyright-text">Hak Cipta © 2023 - CareStunt.com
+            </p>
+            
+          </div>
+            </div>
+            </div>
+          </div>
+        </div>
+  </footer>
+
+
+  </body>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/pages/horizontal-layout.js"></script>
+
+  <script src="assets/extensions/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/js/pages/dashboard.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.read-more-btn').click(function (e) {
+                    e.preventDefault();
+                    $(this).parent().find('.read-more').slideToggle();
+                });
+            });
+        </script>
+</html>

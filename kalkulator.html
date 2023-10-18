@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Gizi - CareStunt</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/main/app.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/extensions/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/shared/iconly.css" />
+  </head>
+  <body style="color: black;">
+    <!-- navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      aria-label="Offcanvas navbar large"
+    >
+      <div class="container-fluid mx-lg-4 m-sm-0">
+        <div class="logo"><a href="index.html"><img src="assets/logo.png" style="width: 60px; height: 60px;" alt=""> Care<span>Stunt</span></a></div>
+        <!-- <img src="assets/logo.png" alt=""  />
+        <h1 style="padding: 10px; margin-top: 5px; color: black">CareStunt</h1> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar2"
+          aria-controls="offcanvasNavbar2"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end text-bg-succebtn-sm btn-success"
+          tabindex="-1"
+          id="offcanvasNavbar2"
+          aria-labelledby="offcanvasNavbar2Label"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Menu</h5>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 ps-5">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Beranda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="konsultasi.html">konsultasi</a>
+              </li>
+              <li class="nav-item active dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pustaka Gizi
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="kalkulator.html"
+                      >Kalkulator Gizi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="rencana-makanan.html"
+                      >Rencana Makanan</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="komunitas.html" class="nav-link"> Komunitas </a>
+              </li>
+              <li class="nav-item">
+                <a href="tentang-kami.html" class="nav-link">
+                  Tentang Kami
+                </a>
+              </li>
+              <div class="dropdown">
+                <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="user-menu d-flex">
+                    <div class="user-img d-flex align-items-center">
+                      <div class="avatar avatar-md">
+                        <img src="assets/images/faces/2.jpg" />
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="dropdownMenuButton"
+                  style="min-width: 11rem"
+                >
+                  <li>
+                    <h6 class="dropdown-header">Hello, Zhaa!
+                      <br><span>zha@gmail.com</span>
+                    </h6>
+                    
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="aktivitas.html"
+                      ><i class="fa-fw select-all fas"></i> Aktivitas Saya</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="kalkulator.html"
+                      ><i class="fa-fw select-all fas"></i> Kalkulator Gizi</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="editprofile.html"
+                      ><i class="fa-fw select-all fas"></i> Ubah Profile</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fa-fw select-all fas"></i>
+                      Keluar</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Tutup Navbar -->
+
+<!-- Isi Content -->
+<div class="container mt-5">
+  <h1 class="text-center mb-4" style="color: black;">Kalkulator Gizi</h1>
+
+    <!-- Kotak Input -->
+    <div class="row">
+        <div class="col-md-6">
+            <form>
+                <div class="black-border">
+                    <div class="form-group">
+                      <h6 class="text-center mb-4">Nama</h6>
+                        <input type="text" class="form-control" id="nama" placeholder="Masukkan nama">
+                    </div>
+                    <div class="form-group">
+                      <h6 class="text-center mb-4">Jenis Kelamin</h6>
+                        <select class="form-control" id="jenisKelamin">
+                            <option value="pria">Laki-laki</option>
+                            <option value="wanita">Perempuan</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                      <h6 class="text-center mb-4">Berat Badan (kg)</h6>
+                        <input type="number" class="form-control" id="beratBadan" placeholder="Masukkan berat badan">
+                    </div>
+                    <div class="form-group">
+                      <h6 class="text-center mb-4">Tinggi Badan (cm)</h6>
+                        <input type="number" class="form-control" id="tinggiBadan" placeholder="Masukkan tinggi badan">
+                    </div>
+                    <div class="form-group">         
+                      <h6 class="text-center mb-4">Umur (tahun)</h6>
+                        <input type="number" class="form-control" id="umur" placeholder="Masukkan umur">
+                      </div>
+                      <div class="d-flex justify-content-center ">
+                    <button type="button" class="btn btn-success justify-content-center" id="btnHitung" style="margin-right: 10px;">Hasil</button>
+                    <button type="button" class="btn btn-success justify-content-center" id="btnReset">Reset</button></div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <!-- Kotak Kebutuhan Kalori -->
+            <div class="black-border">
+              <h5 class="text-center mb-4" style="color: black;">Kebutuhan Kalori</h5>
+                <div class="form-group">
+                    <label for="kaloriMinimal">Minimal Kalori Harian:</label>
+                    <input type="text" class="form-control" id="kaloriMinimal" placeholder="0 kalori" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="totalKalori">Total Kalori Harian:</label>
+                    <input type="text" class="form-control" id="totalKalori" placeholder="0 kalori" readonly>
+                </div>
+                <div class="d-flex justify-content-center ">
+                <button type="button" class="btn btn-success" id="btnRencanaMakanan" style="margin-right: 10px;">Rencana Makanan</button>
+                <button type="button" class="btn btn-success" id="btnResetKebutuhanKalori">Reset</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tambahkan link ke Bootstrap JavaScript (Popper.js diperlukan untuk tooltip) -->
+<p style="margin-bottom: 20px;"></p>
+
+<!-- tutup content -->
+
+      <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-2 col-sm-3">
+              <h6>KONTAK KAMI</h6>
+              <ul class="footer-links">
+                <li><a href="">Handphone : 081223344556</a></li>
+                <li><a href="">Telepon : (123) 456-7890</a></li>
+                <li><a href="">Email : info@CareStunt</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-2 col-sm-2">
+              <h6>TENTANG KAMI</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/category/c-language/">Tentang Kami</a></li>
+                <li><a href="http://scanfcode.com/category/front-end-development/">Artikel</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-2 col-sm-3">
+              <h6>LAYANAN</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/contact/">Konsultasi</a></li>
+                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Rencana Makanan</a></li>
+              </ul>
+            </div>
+            <div class="col-4 col-sm-3 ">
+              <h6 style="color: black;">Daftar di Situs Kami</h6>
+              <div class="d-flex ">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan Email">
+              </div>
+            </div>
+            <div class="col-4 col-sm-1 mt-4 pt-2" style="margin-left: -20px;">
+              <div class="btn-footer">
+              <button type="submit" class="btn">Daftar</button> 
+          </div>
+        </div>
+          </div>
+      
+        </div>
+        <div class="container">
+       
+          <div class="d-flex justify-content-center">
+            
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="bi bi-whatsapp"></i></a></li>
+              <li><a class="twitter" href="#"><i class="bi bi-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="bi bi-linkedin"></i></a></li>   
+            </ul>
+          </div>
+          <div class="d-flex justify-content-center">
+            <p class="copyright-text">Hak Cipta © 2023 - CareStunt.com
+            </p>
+            
+          </div>
+            </div>
+            </div>
+          </div>
+        </div>
+  </footer>
+
+
+  </body>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="script.js"></script>
+  <script src="assets/js/pages/horizontal-layout.js"></script>
+
+  <script src="assets/extensions/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/js/pages/dashboard.js"></script>
+</html>
